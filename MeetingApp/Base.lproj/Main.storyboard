@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="MeetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rabtain" translatesAutoresizingMaskIntoConstraints="NO" id="7rw-JG-Tue">
+                                <rect key="frame" x="20" y="99" width="374" height="159"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smu-cC-qsu">
+                                <rect key="frame" x="218" y="513" width="176" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="176" id="kuQ-5N-oQe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş Yap"/>
+                                <connections>
+                                    <action selector="signInClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PDN-v5-KHy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZv-QX-WZv">
+                                <rect key="frame" x="20" y="513" width="190" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol"/>
+                                <connections>
+                                    <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pso-8W-0DF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RFi-2Q-HyM">
+                                <rect key="frame" x="47" y="395" width="320" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ycg-D5-hxn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0iw-zF-Dkv">
+                                <rect key="frame" x="47" y="337" width="320" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="i5Q-uo-f9C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RFi-2Q-HyM" firstAttribute="top" secondItem="0iw-zF-Dkv" secondAttribute="bottom" constant="24" id="5IZ-Kw-hed"/>
+                            <constraint firstItem="7rw-JG-Tue" firstAttribute="leading" secondItem="PZv-QX-WZv" secondAttribute="leading" id="7gy-1w-HgZ"/>
+                            <constraint firstItem="PZv-QX-WZv" firstAttribute="baseline" secondItem="smu-cC-qsu" secondAttribute="baseline" id="8Wv-6m-vk3"/>
+                            <constraint firstItem="7rw-JG-Tue" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="Fla-Oq-pjA"/>
+                            <constraint firstItem="0iw-zF-Dkv" firstAttribute="trailing" secondItem="RFi-2Q-HyM" secondAttribute="trailing" id="IgM-Bq-PIW"/>
+                            <constraint firstItem="7rw-JG-Tue" firstAttribute="centerX" secondItem="0iw-zF-Dkv" secondAttribute="centerX" id="KUi-z1-Lpi"/>
+                            <constraint firstItem="0iw-zF-Dkv" firstAttribute="top" secondItem="7rw-JG-Tue" secondAttribute="bottom" constant="79" id="XkY-P6-0m9"/>
+                            <constraint firstItem="smu-cC-qsu" firstAttribute="baseline" secondItem="PZv-QX-WZv" secondAttribute="firstBaseline" id="YOq-7e-oyU"/>
+                            <constraint firstItem="7rw-JG-Tue" firstAttribute="trailing" secondItem="smu-cC-qsu" secondAttribute="trailing" id="e8m-lr-Pp3"/>
+                            <constraint firstItem="0iw-zF-Dkv" firstAttribute="leading" secondItem="RFi-2Q-HyM" secondAttribute="leading" id="g7W-ob-a1R"/>
+                            <constraint firstItem="PZv-QX-WZv" firstAttribute="top" secondItem="RFi-2Q-HyM" secondAttribute="bottom" constant="84" id="jGA-o3-x7e"/>
+                            <constraint firstItem="7rw-JG-Tue" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oxR-Zd-ENC"/>
+                            <constraint firstItem="smu-cC-qsu" firstAttribute="leading" secondItem="PZv-QX-WZv" secondAttribute="trailing" constant="8" symbolic="YES" id="pig-ai-PTs"/>
+                            <constraint firstItem="0iw-zF-Dkv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="rLP-Ls-IJm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PZv-QX-WZv" secondAttribute="bottom" constant="318" id="uGP-Po-RCK"/>
+                            <constraint firstItem="7rw-JG-Tue" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zFD-8I-R0E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailText" destination="0iw-zF-Dkv" id="gKE-lB-fEG"/>
+                        <outlet property="passwordText" destination="RFi-2Q-HyM" id="ABb-lj-9nV"/>
+                        <segue destination="L6D-0B-olW" kind="presentation" identifier="toMeetingsVC" modalPresentationStyle="fullScreen" id="NeM-AA-KVb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+        <!--Toplantı Oluştur-->
+        <scene sceneID="udP-zF-0Yy">
+            <objects>
+                <viewController id="J1W-2m-zAp" customClass="CreateMeetingsVC" customModule="MeetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MzU-Hc-wGX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Toplantı Oluşturma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnC-1b-5Zo">
+                                <rect key="frame" x="20" y="109" width="374" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Toplantı Başlığı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HEK-kJ-IpF">
+                                <rect key="frame" x="68" y="241" width="278" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Toplantı Salonu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFY-b4-2Of">
+                                <rect key="frame" x="68" y="308" width="278" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Toplantı Tarihi" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECc-DQ-6sm">
+                                <rect key="frame" x="68" y="376" width="278" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Toplantı Detayı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bij-Wf-u6d">
+                                <rect key="frame" x="68" y="457" width="278" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ht3-vg-KX8">
+                                <rect key="frame" x="68" y="682" width="278" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Paylaş"/>
+                                <connections>
+                                    <action selector="shareClicked:" destination="J1W-2m-zAp" eventType="touchUpInside" id="zf9-tp-bai"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T5g-qn-sNg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Toplantı Oluştur" image="person.badge.plus.fill" catalog="system" id="8Yf-ZT-6wa"/>
+                    <connections>
+                        <outlet property="createMeetingDateText" destination="ECc-DQ-6sm" id="r5J-al-COh"/>
+                        <outlet property="createMeetingDetailsText" destination="bij-Wf-u6d" id="a3r-uc-2jj"/>
+                        <outlet property="createMeetingRoomText" destination="UFY-b4-2Of" id="o9d-Tj-mPO"/>
+                        <outlet property="createMeetingSubjectText" destination="HEK-kJ-IpF" id="01D-Jz-00w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jW3-0d-TDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862.3188405797102" y="412.5"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="txf-wJ-xdu">
+            <objects>
+                <viewController id="CDx-Ep-Zfp" customClass="SettingsVC" customModule="MeetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XeO-zo-Eyu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-Pi-0bq">
+                                <rect key="frame" x="114" y="548" width="187" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Çıkış Yap"/>
+                                <connections>
+                                    <action selector="logOutClicked:" destination="CDx-Ep-Zfp" eventType="touchUpInside" id="8NS-Pr-avl"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rabtain" translatesAutoresizingMaskIntoConstraints="NO" id="8VD-S7-AtR">
+                                <rect key="frame" x="55" y="111" width="304" height="259"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k1D-FK-uwl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="1AT-ew-Vps"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toLoginVC" modalPresentationStyle="fullScreen" id="aAL-Ta-TvA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4o-KO-hkK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879.7101449275365" y="1063.3928571428571"/>
+        </scene>
+        <!--Toplantılar-->
+        <scene sceneID="Kgk-pT-sHN">
+            <objects>
+                <viewController id="fXJ-9u-uOi" customClass="MeetingsVC" customModule="MeetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P24-uf-fW6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="skZ-nr-ifo">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="458" id="XRr-zQ-Wva" customClass="MeetingsCell" customModule="MeetingApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="458"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XRr-zQ-Wva" id="aW5-ri-6n2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="458"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toplantı Başlığı" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DR-9L-vY2">
+                                                    <rect key="frame" x="20" y="55" width="374" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="374" id="Jns-GQ-eMT"/>
+                                                        <constraint firstAttribute="height" constant="21" id="mgo-ba-fQC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toplantı Tarihi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blX-Db-ZI0">
+                                                    <rect key="frame" x="20" y="418" width="374" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="OtY-If-Rtv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgN-SM-eyL">
+                                                    <rect key="frame" x="20" y="11" width="394" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="394" id="MYQ-0J-6dt"/>
+                                                        <constraint firstAttribute="height" constant="21" id="d2Y-VU-mmL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toplantı Salonu" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZZ-5a-2Gl">
+                                                    <rect key="frame" x="20" y="381" width="374" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="DIw-hO-KWV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czi-JL-OJX">
+                                                    <rect key="frame" x="20" y="98" width="374" height="261"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="czi-JL-OJX" firstAttribute="trailing" secondItem="0ZZ-5a-2Gl" secondAttribute="trailing" id="5u7-nR-e5R"/>
+                                                <constraint firstItem="0ZZ-5a-2Gl" firstAttribute="top" secondItem="czi-JL-OJX" secondAttribute="bottom" constant="22" id="6Wq-tl-rYI"/>
+                                                <constraint firstItem="0ZZ-5a-2Gl" firstAttribute="leading" secondItem="blX-Db-ZI0" secondAttribute="leading" id="AY6-Ki-Ymr"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="blX-Db-ZI0" secondAttribute="bottom" constant="8" id="FOf-Ml-C7y"/>
+                                                <constraint firstItem="6DR-9L-vY2" firstAttribute="leading" secondItem="czi-JL-OJX" secondAttribute="leading" id="GgX-lr-t4H"/>
+                                                <constraint firstItem="czi-JL-OJX" firstAttribute="leading" secondItem="0ZZ-5a-2Gl" secondAttribute="leading" id="JYR-VT-Sbi"/>
+                                                <constraint firstItem="AgN-SM-eyL" firstAttribute="leading" secondItem="aW5-ri-6n2" secondAttribute="leadingMargin" id="Jdj-wU-riQ"/>
+                                                <constraint firstItem="AgN-SM-eyL" firstAttribute="top" secondItem="aW5-ri-6n2" secondAttribute="topMargin" id="QeT-WJ-27t"/>
+                                                <constraint firstItem="AgN-SM-eyL" firstAttribute="leading" secondItem="6DR-9L-vY2" secondAttribute="leading" id="VrC-kw-Sqs"/>
+                                                <constraint firstItem="0ZZ-5a-2Gl" firstAttribute="trailing" secondItem="blX-Db-ZI0" secondAttribute="trailing" id="ZqU-VH-TGk"/>
+                                                <constraint firstItem="blX-Db-ZI0" firstAttribute="top" secondItem="0ZZ-5a-2Gl" secondAttribute="bottom" constant="16" id="eXt-V5-zbY"/>
+                                                <constraint firstItem="6DR-9L-vY2" firstAttribute="trailing" secondItem="czi-JL-OJX" secondAttribute="trailing" id="jMX-wz-7Mg"/>
+                                                <constraint firstItem="czi-JL-OJX" firstAttribute="top" secondItem="6DR-9L-vY2" secondAttribute="bottom" constant="22" id="leF-iQ-tSk"/>
+                                                <constraint firstItem="6DR-9L-vY2" firstAttribute="top" secondItem="AgN-SM-eyL" secondAttribute="bottom" constant="23" id="lom-5X-BeS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailsText" destination="czi-JL-OJX" id="8vs-mk-1zM"/>
+                                            <outlet property="emailText" destination="AgN-SM-eyL" id="hEt-cM-w98"/>
+                                            <outlet property="meetingDate" destination="blX-Db-ZI0" id="KqI-Qo-VXl"/>
+                                            <outlet property="roomText" destination="0ZZ-5a-2Gl" id="Nu9-i7-gFM"/>
+                                            <outlet property="subjectText" destination="6DR-9L-vY2" id="egy-rS-0QY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cfh-KJ-fFn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="skZ-nr-ifo" firstAttribute="bottom" secondItem="Cfh-KJ-fFn" secondAttribute="bottom" id="1yo-fC-BgW"/>
+                            <constraint firstItem="skZ-nr-ifo" firstAttribute="leading" secondItem="Cfh-KJ-fFn" secondAttribute="leading" id="ebq-wD-O2B"/>
+                            <constraint firstItem="skZ-nr-ifo" firstAttribute="top" secondItem="Cfh-KJ-fFn" secondAttribute="top" id="jsO-mh-dt3"/>
+                            <constraint firstItem="skZ-nr-ifo" firstAttribute="centerX" secondItem="P24-uf-fW6" secondAttribute="centerX" id="oJY-2o-EyN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Toplantılar" image="person.2.fill" catalog="system" id="H4G-sz-HIL"/>
+                    <connections>
+                        <outlet property="tableView" destination="skZ-nr-ifo" id="Deb-Ms-rgD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="htz-8L-swZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860.8695652173915" y="-222.32142857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HYN-r6-7Sz">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBar" id="L6D-0B-olW" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oap-SW-uUI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fXJ-9u-uOi" kind="relationship" relationship="viewControllers" id="LiX-C1-QWc"/>
+                        <segue destination="J1W-2m-zAp" kind="relationship" relationship="viewControllers" id="3h7-rd-7ck"/>
+                        <segue destination="CDx-Ep-Zfp" kind="relationship" relationship="viewControllers" id="7pU-Kn-64u"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ee-lV-vfX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rabtain" width="728" height="128"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
+        <image name="person.badge.plus.fill" catalog="system" width="128" height="124"/>
+        <image name="s.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
